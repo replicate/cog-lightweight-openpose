@@ -1,0 +1,14 @@
+build:
+  gpu: false
+  system_packages:
+    - "libgl1-mesa-glx"
+    - "libglib2.0-0"
+  python_version: "3.7"
+  python_packages:
+     - "numpy>=1.14.0"
+     - "torch>=0.4.1"
+     - "torchvision>=0.2.1"
+     - "opencv-python>=3.4.0.14"
+     - "matplotlib"
+
+predict: "predict.py:Predictor"
